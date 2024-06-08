@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    
+<br> 
+<!--Format: 
+Think of it as outside going in...
+card is the outside box - the box has a body- inside the body it has a row - and inside the row it has a column - 
+inside the column we have a input box with a label - right outside the input form there is a button-->
+
+<div class="card"> 
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm">
+                <div class = "form-group">
+                    <label for="new-team-name"> Team Name</label>
+                    <input type="text" class="form-control" id="new-team-name">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="new-team" class ="btn btn-primary form-control">Create</button>
+        </div>
+
+    </div>
+
+</div>
+<br>
+<!--All our teams will be stored here from tables make in JS-->
+<div id="teams"> 
+
+</div>
+
+
+
+
+
+
+<!--Scripts for links-->
+    <script src="node_modules/jquery/dist/jquery.js"> </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"> </script>
+    <script src="index.js"></script>
+</body>
+</html>
